@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/3b1384a103.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navLink">
+            <div class="logo">
+                <h1>Coding <span>Addict</span></h1>
+            </div>
+                <div class="middel">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Project</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+        </nav>
+        <div id="menu-bar" class="fas fa-bars"  onclick="showmenu()" ></div>  
+    </header>
+
+    <div class="counter">
+        <p>Counter</p>
+        <label id="counterLabel">0</label><br>
+    <div class="btns">
+        <button id="decreaseBtn">decrease</button>
+        <button id="resetBtn">reset</button>
+        <button id="increaseBtn">increase</button>
+    </div>
+    </div><hr>
+    <div class="colorBox">
+        <p class="colorRGBA"></p>
+        <button class="colorButton">Click Me</button>
+    </div><hr>
+
+    <section class="slider-container">
+        <h2>Our Reviews</h2>
+        <div class="slider">
+            <div class="slide active">
+                <img src="./image.png" alt="Person Image" class="avatar">
+                <h4>Peter Jones</h4>
+                <p class="position">INTERN</p>
+                <p class="description">Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.</p>
+            </div>
+            <div class="slide active">
+                <img src="./image2.png" alt="Person Image" class="avatar">
+                <h4>Michel </h4>
+                <p class="position">INTERN</p>
+                <p class="description">Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.</p>
+            </div>
+            <div class="slide active">
+                <img src="./image3.png" alt="Person Image" class="avatar">
+                <h4>Jesey</h4>
+                <p class="position">INTERN</p>
+                <p class="description">Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.</p>
+            </div>
+            <div class="slide active">
+                <img src="./image4.jpg" alt="Person Image" class="avatar">
+                <h4>Jasmin</h4>
+                <p class="position">INTERN</p>
+                <p class="description">Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.</p>
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+        <div class="controls">
+            <button id="prevBtn">❮</button>
+            <button id="nextBtn">❯</button>
+        </div>
+        <button id="surpriseBtn">Surprise Me</button>
+    </section>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>

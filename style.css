@@ -1,0 +1,280 @@
+*{
+    overflow-x: hidden;
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition:all 0.5s linear;
+    scroll-behavior: smooth;
+    font-size: 25px;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    padding-top: 10px;
+}
+
+.logo h1{
+    font-size: 30px;    
+    font-weight: 25px;
+    margin-left: 130px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 240px;
+    z-index: 1000;
+    color: black;
+    width: 100%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    padding-right: 20px;
+    
+}
+nav ul li a{
+    font-size: 18px;
+    font-weight: 50px;
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    text-decoration:underline ;
+}
+#menu-bar{
+    color: rgb(52, 130, 255);
+    border: none;
+    margin-right: 0.51rem;
+    margin-top: 22px;
+    border-radius: 0.5rem;
+    font-size: 22px;
+    font-weight: 20px;
+    padding:8px 20px;
+    margin-bottom: 7rem;
+    cursor: pointer;
+    display: none;
+}
+
+.counter p{
+    margin-top: 5rem;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 20px;
+}
+#counterLabel{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+}
+.btns{
+    text-align: center;
+    display: inline-block;
+    margin-left: 22.7rem;
+}
+.btns button{
+    font-size: 17px;
+    width: 110px;
+    padding: 5px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(52, 130, 255);
+    flex-direction: row;
+}
+.colorBox {
+    width: 100%;
+    height: 25rem;
+    border: 1px solid #000;
+    margin: 20px 0;
+    position: relative;
+    text-align: center;
+    padding-top: 60px;
+}
+.colorButton{
+    margin-top: 20px;
+    font-size: 22px;
+    width: 190px;
+    height: 50px;
+    padding: 5px;
+    border: none;
+    color: black;
+    border-radius: 5px;
+    background-color: rgb(238, 236, 236);
+    flex-direction: row;
+}
+/*Task 4*/
+.slider-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.slide.active {
+    display: block;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.position {
+    font-size: 14px;
+    color: #007BFF;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 16px;
+    color: #555;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.controls button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#surpriseBtn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 39%;
+}
+
+#surpriseBtn:hover {
+    background-color: #0056b3;
+}
+
+
+
+@media (max-width:990px){
+    *{
+        scroll-behavior: smooth;
+    }
+    #menu-bar{
+        margin-right: 5%;margin-top: 5%;
+        font-size: 35px;
+        padding: 30px;
+        overflow-y: hidden;
+        display: block;
+    } 
+    .logo h1{
+        padding-top: 50px;
+        padding-bottom: 25px;
+        padding-left:20px;
+        margin-left: 5px;
+
+    }
+    .navLink .logo span{
+        color: rgb(52, 130, 255);
+    }
+    nav{
+        margin: 5px 60px;
+        width: 100%;
+    }
+    header{
+        color: white;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        height: 150px;
+        overflow-y: hidden;
+    }
+    header .middel {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right: 0;
+        background:white;
+        color: black;
+        border-top: .1rem solid rgba(255, 255, 255, 0.848);
+        padding: 1rem  2rem;
+        clip-path: polygon(0 0, 100% 0, 100%, 0 0);
+        z-index: 9999;
+        
+    }
+    header .middel.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        display: block;
+        color:black;
+        background-color: white;
+    }
+    header .middel ul li {
+        display: block;
+        border-radius: 0.5rem;
+        padding: 0.7rem;
+        margin: 1.5rem 0;
+        text-align: left;
+        
+    }
+    header .middel ul li a{
+        color: black;
+        font-size: 20px;
+    }
+    .counter p{
+        font-size: 45px;
+        font-weight: 15px;
+    }
+    .counter .btns button{
+        font-size: 25px;
+        padding: 10px 15px;
+        width: 130px;
+    }
+    .counter .btns {
+        text-align: center;
+        margin-left: 28.5%;
+    }
+}
